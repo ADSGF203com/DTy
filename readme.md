@@ -127,9 +127,9 @@ All data required for reproduction of the analysis were distributed in this repo
 https://github.com/ADSGF203com/DTy/tree/master/db/Neisseria
 
 These includes:
-references.fas.gz - reference alleles for all pan genes (for calling new alleles)
-cgmlst.genes - A list of core genes used in the dcgMLST scheme
-profile.parq - Allelic profiles of all ~70,000 genomes in parquet format, and can be read using the Pandas library (https://pandas.pydata.org/docs/reference/api/pandas.read_parquet.html). 
-HierCC.tsv.gz - A tab-delimited table consisting of HierCC results for all ~70,000 genomes
-hc.species - A mapping table that specifies correlations between HC1130 and HC1050 and the Neisseria species
+* references.fas.gz - reference alleles for all pan genes (for calling new alleles)
+* cgmlst.genes - A list of core genes used in the dcgMLST scheme
+* profile.parq - Allelic profiles of all ~70,000 genomes in parquet format, and can be read using the Pandas library (https://pandas.pydata.org/docs/reference/api/pandas.read_parquet.html). 
+* HierCC.tsv.gz - A tab-delimited table consisting of HierCC results for all ~70,000 genomes
+* hc.species - A mapping table that specifies correlations between HC1130 and HC1050 and the Neisseria species
 
