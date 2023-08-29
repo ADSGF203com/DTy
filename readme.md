@@ -43,6 +43,7 @@ conda install -c conda-forge biopython numba numpy pandas click pyarrow fastparq
 conda install -c bio-conda blast diamond
 ~~~~~~~~~~
 
+The installation process normally finishes in <10 minutes. 
 
 
 # Quick Start (with examples)
@@ -56,6 +57,7 @@ $ python DTy.py -q examples/GCF_005221305.fna -o examples/GCF_005221305.alleles
 python alleles2profile.py -p examples/examples examples/*.alleles
 ~~~~~~~~~~~
 
+The whole calculation finishes in <2 minutes with 8 CPU threads. 
 
 
 # USAGE:
@@ -114,3 +116,20 @@ The header of each allelic sequence includes MD5 values, identity to reference a
 alleles2profile.py generates two files. 
 <prefix>.tsv contains a tab-delimited allelic profile (one strain per line). 
 <prefix>.parq contains the same information except that in parquet format, with reduced storage space. 
+
+
+# Citation and Reproduction Instructions
+### Citation for the pipeline and the Neisseria dcgMLST scheme
+Ling Zhong, Menghan Zhang, Libing Sun, Yu Yang, Bo Wang, Haibing Yang, Qiang Shen, Yu Xia, Jiarui Cui, Hui Hang, Yi Ren, Bo Pang, Xiangyu Deng, Yahui Zhan, Heng Li, and Zhemin Zhou, Distributed genotyping and clustering of Neisseria strains reveals continual emergence of epidemic meningococcus over a century, submitted
+
+### Reproduction Instructions
+All data required for reproduction of the analysis were distributed in this repository under
+https://github.com/ADSGF203com/DTy/tree/master/db/Neisseria
+
+These includes:
+references.fas.gz - reference alleles for all pan genes (for calling new alleles)
+cgmlst.genes - A list of core genes used in the dcgMLST scheme
+profile.parq - Allelic profiles of all ~70,000 genomes in parquet format, and can be read using the Pandas library (https://pandas.pydata.org/docs/reference/api/pandas.read_parquet.html). 
+HierCC.tsv.gz - A tab-delimited table consisting of HierCC results for all ~70,000 genomes
+hc.species - A mapping table that specifies correlations between HC1130 and HC1050 and the Neisseria species
+
