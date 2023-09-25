@@ -21,7 +21,7 @@ All libraries can be installed using pip:
 ~~~~~~~~~~
 pip install click numba numpy pandas biopython pyarrow fastparquet
 ~~~~~~~~~~
-EToKi also calls two 3rd party programs:
+DTy also calls two 3rd party programs:
 
 ~~~~~~~~~~
 ncbi-blast+
